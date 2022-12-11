@@ -1,0 +1,95 @@
+$card-background: #2f3136;
+$body-background: #36393f;
+$text-color:  hsl(210,calc(var(1, 1)*2.9%),86.7%);
+
+.emoji {
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+}
+
+.acOuter {
+    height: 496px;
+    width: 225px;
+    background-color: $card-background;
+    display: block;
+    
+
+    .acGridContainer {
+        height: 496px;
+        width: 221px;
+        border-left: 4px solid red;
+
+        .acGrid {
+            overflow: hidden;
+            padding: .5rem 1rem 1rem .75rem;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-columns: auto;
+
+            .acCharNameContainer {
+                display: flex;
+                grid-column: 1/1;
+                align-items: center;
+                margin-top: 8px;
+                
+                .acCharNameSpan {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+
+            .acDescriptionContainer {
+                unicode-bidi: plaintext;
+                color: white;
+                margin-top: 8px;
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+                font-weight: 400;
+                white-space: pre-line;
+                grid-column: 1/1;
+                text-align: left;
+            }
+
+            .acImageContainer {
+                margin-top: 16px;
+                grid-column: 1/1;
+                border-radius: 4px;
+                img {
+                    width: 193px;
+                    height: 300px;
+                }
+            }
+
+            .acFooter {
+                margin-top: 8px;
+                grid-column: 1/1;
+                grid-row: auto/auto;
+                display: flex;
+                vertical-align: baseline;
+                img {
+                    margin-right: 8px;
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    border-radius: 50%;
+                }
+                .acFooterText {
+                    margin-top: 2px;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    font-weight: 500;
+                    color: white;
+                    text-align: left;
+                }
+            }
+
+        }
+
+    }
+
+    
+
+
+}
